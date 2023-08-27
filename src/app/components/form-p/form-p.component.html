@@ -1,0 +1,22 @@
+
+<div class="one">
+<button (click)="NewThought()">New thought</button>
+
+<form  *ngIf="showForm" (ngSubmit)="CreatePost()">
+    <input type="text" placeholder="Subject" [(ngModel)]="newPost.title" name="title">
+    <input type="text" placeholder="Subject" [(ngModel)]="newPost.thought" name="title">
+    <button type="submit">Add Post</button>
+</form>
+</div>
+
+
+
+<!-- FORMS
+-go to app.module.ts
+-imports array
+-add FormsModule
+import { FormsModule } from '@angular/forms';
+
+-create a variable
+-create input on html
+--add [(ngModel)]="newVariableName" -->
